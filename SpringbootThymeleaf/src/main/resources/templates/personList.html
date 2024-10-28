@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Category List</title>
+      <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+   </head>
+   <body>
+      <h1>Categories List</h1>
+      <a href="addCategory">Add Category</a>
+      <br/><br/>
+      <div>
+         <table border="1">
+            <tr>
+               <th>Mã doanh mục</th>
+               <th>Tên doanh mục</th>
+               <th>Mô tả</th>
+            </tr>
+            <tr th:each ="category : ${categories}">
+               <td th:utext="${category.categoryId}">...</td>
+               <td th:utext="${category.categoryName}">...</td>
+               <td th:utext="${category.description}">...</td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>
