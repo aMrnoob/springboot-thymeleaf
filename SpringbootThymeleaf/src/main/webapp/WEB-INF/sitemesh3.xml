@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <sitemesh>
-	<mapping path="/admin/*" name="admin" decorator="admin.jsp" />
-	<mapping path="/vendor/*" name="vendor" decorator="vendor.jsp" />
-	<mapping path="/user/*" name="user" decorator="user.jsp" />
+	<mapping path="/category/*" name="category" decorator="category.jsp" />
 	<mapping path="/api*" exclude="true" />
 </sitemesh>
